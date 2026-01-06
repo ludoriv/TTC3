@@ -1,0 +1,44 @@
+     const pdfs = [
+      { title: "Claf Aubergine.pdf", url:"Recettes_pdf/Claf Aubergine.pdf"},
+      { title:  "Claf Courget Noiset.pdf", url:"Recettes_pdf/Claf Courget Noiset.pdf"},
+      { title:  "Cobbler pêches_mirabelles.pdf", url:"Recettes_pdf/Cobbler pêches_mirabelles.pdf"},
+      { title:  "FileMigGingOrangH.pdf", url:"Recettes_pdf/FileMigGingOrangH.pdf"},
+      { title:  "PouletMielSceSoja.pdf", url:"Recettes_pdf/PouletMielSceSoja.pdf"},
+      { title:  "PouletOranGingeHS.pdf", url:"Recettes_pdf/PouletOranGingeHS.pdf"},
+      { title:  "ST Jacques Carpaccio.pdf", url:"Recettes_pdf/ST Jacques Carpaccio.pdf"},
+      { title: "T.SurimiOeufPomeloHS.pdf", url:"Recettes_pdf/T.SurimiOeufPomeloHS.pdf"},
+      { title:  "tarte au maroilles.pdf", url:"Recettes_pdf/tarte au maroilles.pdf"}
+  ]
+ 
+      const pdfs = [
+      { title: "Butte_parolesTTC_2023", url: "pdfs/doc1.pdf" },
+      { title: "FD_70_ans", url: "pdfs/doc2.pdf" },
+      { title: "Les 70 ans de Françoise à St Mandrier", url: "pdfs/doc4.pdf" },
+      { title: "Hélène_79 ans_St Mandrier", url: "pdfs/doc3.pdf" },
+      { title: "Palpitations", url: "pdfs/doc5.pdf" },
+      { title: "Paroles_Soustons_2024", url: "pdfs/doc6.pdf" },
+      { title: "Soustons(FD)_2024", url: "pdfs/doc7.pdf" }
+    ];
+
+const docum = [
+"chansons_pdf/Butte_parolesTTC_2023.pdf",
+"chansons_pdf/FD_70_ans.pdf",
+"chansons_pdf/Hélène_79 ans_St Mandrier.pdf",
+"chansons_pdf/Les 70 ans de Françoise à St Mandrier.pdf",
+"chansons_pdf/Palpitations.pdf",
+"chansons_pdf/paroles_soustons2024.pdf",
+"chansons_pdf/Soustons_2024.pdf"
+]
+
+     const docum = [
+"Recettes_pdf/Claf Aubergine.pdf",
+"Recettes_pdf/Claf Courget Noiset.pdf",
+"Recettes_pdf/Cobbler pêches_mirabelles.pdf",
+"Recettes_pdf/FileMigGingOrangH.pdf",
+"Recettes_pdf/PouletMielSceSoja.pdf",
+"Recettes_pdf/PouletOranGingeHS.pdf",
+"Recettes_pdf/ST Jacques Carpaccio.pdf",
+"Recettes_pdf/T.SurimiOeufPomeloHS.pdf",
+"Recettes_pdf/tarte au maroilles.pdf"
+]
+

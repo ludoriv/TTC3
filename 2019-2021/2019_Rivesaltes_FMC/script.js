@@ -1,0 +1,32 @@
+const photos = 
+["images_2019_Rivesaltes/6-christine jardinière.jpg",
+"images_2019_Rivesaltes/Fdub26.jpg",
+"images_2019_Rivesaltes/J1-CT (1).jpg",
+"images_2019_Rivesaltes/J1-CT2.jpg",
+"images_2019_Rivesaltes/J1-CT4.jpg",
+"images_2019_Rivesaltes/J1-CT5.jpg",
+"images_2019_Rivesaltes/J1-CT6.jpg",
+"images_2019_Rivesaltes/J1-CT6_Hélène et Yves.jpg",
+"images_2019_Rivesaltes/J1-CT7.jpg",
+"images_2019_Rivesaltes/J1-CT8.jpg",
+"images_2019_Rivesaltes/J1-Fdub_mémorial.jpg",
+"images_2019_Rivesaltes/J1-fdub_wapp (1) (2).jpg",
+"images_2019_Rivesaltes/J1-fdub_wapp (1) (3).jpg",
+"images_2019_Rivesaltes/J1-fdub_wapp (1) (4).jpg",
+"images_2019_Rivesaltes/J1-fdub_wapp (1).jpg",
+"images_2019_Rivesaltes/J1-le soir.jpg",
+"images_2019_Rivesaltes/J1-wapp (1) (9).jpg",
+"images_2019_Rivesaltes/J1-wapp(8).jpg",
+"images_2019_Rivesaltes/J1-wapp-memorial.jpg",
+"images_2019_Rivesaltes/J1-wapp-yves.jpg"]
+let current = 0;
+const img = document.getElementById("photo");
+document.getElementById("next").addEventListener("click", () => {
+  current = (current + 1) % photos.length;
+  img.src = photos[current];
+});
+
+document.getElementById("prev").addEventListener("click", () => {
+  current = (current - 1 + photos.length) % photos.length;
+  img.src = photos[current];
+});

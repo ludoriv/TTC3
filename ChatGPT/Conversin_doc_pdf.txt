@@ -1,0 +1,82 @@
+Est-il possible de convertir tous les fichier word d'un dossier en fichiers pdf (en python par exemple) ?
+
+ChatGPT a dit :
+Oui, il est tout à fait possible de convertir tous les fichiers Word (.doc et .docx) d’un dossier en fichiers PDF en Python. Voici plusieurs approches, selon votre système d’exploitation :
+
+✅ Méthode 1 : Pour Windows – avec win32com.client (Microsoft Word requis)
+python
+Copier
+Modifier
+import os
+import win32com.client
+
+def convert_word_to_pdf(folder_path):
+    word = win32com.client.Dispatch("Word.Application")
+    word.Visible = False
+
+    for filename in os.listdir(folder_path):
+        if filename.endswith(".doc") or filename.endswith(".docx"):
+            full_path = os.path.join(folder_path, filename)
+            pdf_path = os.path.splitext(full_path)[0] + ".pdf"
+
+            doc = word.Documents.Open(full_path)
+            doc.SaveAs(pdf_path, FileFormat=17)  # 17 = wdFormatPDF
+            doc.Close()
+            print(f"Converted: {filename} -> {pdf_path}")
+
+    word.Quit()
+
+# Exemple d'utilisation
+convert_word_to_pdf("C:\\chemin\\vers\\le\\dossier")
+⚠️ Nécessite Microsoft Word installé sur le système.
+
+✅ Méthode 2 : Multi-plateforme avec docx2pdf
+Cette bibliothèque fonctionne uniquement sur Windows et macOS et nécessite Microsoft Word.
+
+bash
+Copier
+Modifier
+pip install docx2pdf
+python
+Copier
+Modifier
+from docx2pdf import convert
+
+# Convertir tous les fichiers Word d'un dossier
+convert("chemin/vers/le/dossier")
+✅ Méthode 3 : LibreOffice (Linux/macOS/Windows) – sans Microsoft Word
+Vous pouvez utiliser LibreOffice en ligne de commande via subprocess.
+
+python
+Copier
+Modifier
+import os
+import subprocess
+
+def convert_with_libreoffice(folder_path):
+    for file in os.listdir(folder_path):
+        if file.endswith(".doc") or file.endswith(".docx"):
+            full_path = os.path.join(folder_path, file)
+            subprocess.run([
+                "soffice",  # ou "libreoffice" selon votre installation
+                "--headless", "--convert-to", "pdf", full_path,
+                "--outdir", folder_path
+            ])
+            print(f"Converted: {file}")
+
+# Exemple d'utilisation
+convert_with_libreoffice("/chemin/vers/le/dossier")
+✅ Fonctionne bien sur Linux. LibreOffice doit être installé (sudo apt install libreoffice sous Debian/Ubuntu).
+
+Souhaitez-vous que je vous aide à adapter le code à votre configuration système (Windows, macOS, Linux) ?
+
+
+
+Vous avez dit :
+Non merci. Votre réponse me suffit !
+
+ChatGPT a dit :
+Parfait, ravi que ça vous aide ! 😊
+N’hésitez pas à revenir si vous avez d’autres questions ou besoin d’un script plus personnalisé.
+
+Bonne conversion de documents ! 📝➡️📄

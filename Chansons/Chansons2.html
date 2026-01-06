@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Affichage de PDF</title>
+  <style>
+    #pdf-viewer {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<style>
+    body {
+      font-family: Arial, sans-serif; font-size: 16px
+    }
+</style>
+<body>
+  <h1>Liste de chansons </h1>
+  <h3> <I>(format pdf)</I></h3>
+  <ul id="pdf-list"></ul>
+
+  <iframe id="pdf-viewer" src=""></iframe>
+
+  <script>
+    // Liste des titres et des liens vers les fichiers PDF
+    const pdfs = [
+      { title: "Les 70 ans de Françoise, St Mandrier (2016)", url: "pdfs/doc2.pdf" },
+      { title: "Les 70 ans de Françoise (nlle présentation) (2016)", url: "pdfs/doc4.pdf" },
+      { title: "Hélène_79 ans_St Mandrier (2019)", url: "pdfs/doc3.pdf" },
+      { title: "Butte_paroles_TTC, Souston (2021)", url: "pdfs/doc1.pdf" },
+      { title: "Les_vrais_amis_Julos_Beaucarne, Rivesaltes (2021)", url: "pdfs/doc11.pdf" },
+      { title: "Odes St Gildas (2020) et St Mandrier(2022)", url: "pdfs/doc6.pdf" },
+      { title: "Palpitations, Rivesaltes (2022)", url: "pdfs/doc5.pdf" },
+      { title: "Il suffit...Soustons (2024)", url: "pdfs/doc7.pdf" },
+      { title: "Il suffit...Soustons(FD)_(2024)", url: "pdfs/doc8.pdf" },
+      { title: "Heureusement...Rivesaltes (Nov_2024)", url: "pdfs/doc9.pdf" },
+      { title: "Amis, comme le temps passe, Rivesaltes (2024)", url: "pdfs/doc12.pdf" },
+      { title: "Les quatre oiseaux, St Mandrier (2025)", url: "pdfs/doc10.pdf" }
+    ];
+
+    const list = document.getElementById("pdf-list");
+    const viewer = document.getElementById("pdf-viewer");
+
+    // Générer la liste cliquable
+    pdfs.forEach(pdf => {
+      const li = document.createElement("li");
+      const link = document.createElement("a");
+      link.href = "#";
+      link.textContent = pdf.title;
+      link.addEventListener("click", () => {
+        viewer.src = pdf.url;
+      });
+      li.appendChild(link);
+      list.appendChild(li);
+    });
+  </script>
+</body>
+</html>

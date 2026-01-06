@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Affichage de PDF</title>
+  <style>
+    #pdf-viewer {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Recettes TTC (Hélène, 2025)</h1>
+  <h3> <I>(format pdf)</I></h3>
+  <ul id="pdf-list"></ul>
+
+  <iframe id="pdf-viewer" src=""></iframe>
+
+  <script>
+    // Liste des titres et des liens vers les fichiers PDF
+     const pdfs = [
+      { title: "CanardOrangeMaminka.pdf", url:"Fpdf/CanardOrangeMaminka.pdf"},
+      { title:  "FiletMign_tapenade_Vazeille.pdf", url:"Fpdf/FiletMign_tapenade_Vazeille.pdf"},
+      { title:  "Poivron_Boursin_Verrine.pdf", url:"Fpdf/Poivron_Boursin_Verrine.pdf"},
+      { title:  "PouletOranGingeHS.pdf", url:"Fpdf/PouletOranGingeHS.pdf"},
+      { title:  "Reine de saba HS.pdf", url:"Fpdf/Reine de saba HS.pdf"},
+      { title:  "Sal.Pois-chiche-orientale_PP.pdf", url:"Fpdf/Sal.Pois-chiche-orientale_PP.pdf"},
+      { title:  "T.amandine_poires.pdf", url:"Fpdf/T.amandine_poires.pdf"},
+      { title:  "Tiramisu_Citron_HS.pdf", url:"Fpdf/Tiramisu_Citron_HS.pdf"},
+      { title: "TruffesChocoWhisky.pdf", url:"Fpdf/TruffesChocoWhisky.pdf"},
+  ];
+
+
+    const list = document.getElementById("pdf-list");
+    const viewer = document.getElementById("pdf-viewer");
+
+    // Générer la liste cliquable
+    pdfs.forEach(pdf => {
+      const li = document.createElement("li");
+      const link = document.createElement("a");
+      link.href = "#";
+      link.textContent = pdf.title;
+      link.addEventListener("click", () => {
+        viewer.src = pdf.url;
+      });
+      li.appendChild(link);
+      list.appendChild(li);
+    });
+  </script>
+</body>
+</html>

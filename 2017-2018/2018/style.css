@@ -1,0 +1,71 @@
+/*🧱 Nouvelle structure de ton projet :
+pgsql
+Copier
+Modifier
+mon-site/
+│
+├── index.html
+├── zone1.html
+├── zone2.html
+├── zone3.html
+├── style.css               <-- Le fichier CSS séparé
+└── images/
+    ├── zone1-photo1.jpg
+    ├── zone2-photo1.jpg
+    └── zone3-photo1.jpg
+*/
+style.css 
+/*(à placer à la racine)
+css
+Copier
+Modifier */
+/* Style général */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Titres */
+h1 {
+    color: #007BFF;
+}
+
+/* Liens */
+a {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 12px 24px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+/* Images */
+img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: block;
+}
+
+/* Listes sur la page d’accueil */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 20px 0;
+}

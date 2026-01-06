@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Fiche avec bouton</title>
+</head>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+	h4 {
+    color: #007BFF;
+}
+</style>
+
+<body> 
+    <h4> <I>Mot de passe correct... </I></h4>
+    <h1>Site TTC </h1>
+    <p>Cliquez sur le bouton ci-dessous pour ouvrir le site <code>TTC</code></p>
+    
+    <button onclick="ouvrirIndex()"><h2><I>Ouvrir TTC</I><h2></button>
+
+    <script>
+        function ouvrirIndex() {
+            window.location.href = "TTC.html";
+        }
+    </script>
+</body>
+</html>

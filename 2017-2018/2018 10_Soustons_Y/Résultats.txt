@@ -1,0 +1,49 @@
+Python 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+import os ; os.chdir("C:/Comm2025/Python_2025/List_image")
+
+dossier_source = "Photos TTC Yves_out2"
+def liste_images(dossier_images):
+#    os.makedirs(dossier_sortie, exist_ok=True)
+#    for nom_fichier in os.listdir(dossier_entree):
+#    chemin_fichier = os.path.join(dossier_entree, nom_fichier)
+    Photo = [f for f in os.listdir(dossier_images)]
+    print(Photo)
+
+for nom_sous_dossier in os.listdir(dossier_source):
+    chemin_sous_dossier = os.path.join(dossier_source, nom_sous_dossier)
+#    if os.path.isdir(chemin_sous_dossier):
+        # Créer un dossier de sortie correspondant
+#        dossier_sortie_sous_dossier = os.path.join(dossier_destination, nom_sous_dossier)
+    liste_images(chemin_sous_dossier)
+    print(f"Traitement terminé pour : {nom_sous_dossier}")
+
+    
+['IMG_0919.JPG', 'IMG_0920.JPG', 'IMG_0921.JPG']
+Traitement terminé pour : 2008 03 TTC Jura
+['Grèbe huppée.JPG', 'P1000344.JPG', 'P1000347.JPG', 'P1000357.JPG', 'P1000358.JPG', 'P1000359.JPG', 'P1000365.JPG', 'P1000367.JPG', 'P1000368.JPG', 'P1000372.JPG', 'P1000373.JPG', 'P1000374.JPG', 'P1000377.JPG', 'P1000379.JPG', 'P1000380.JPG', 'P1000384.JPG', 'P1000385.JPG', 'P1000386.JPG', 'P1000387.JPG', 'P1000391.JPG', 'P1000392.JPG', 'P1000393.JPG', 'P1000394.JPG', 'P1000395.JPG', 'P1000396.JPG', 'P1000397.JPG', 'P1000401.JPG', 'P1000402.JPG', 'P1000403.JPG', 'P1000405.JPG', 'P1000406.JPG', 'P1000407.JPG']
+Traitement terminé pour : 2009 10 TTC Chaux
+['P1000442[1].JPG', 'P1000443[2].JPG', 'P1000448[1].JPG', 'P1000485[2].JPG']
+Traitement terminé pour : 2010 09 TTC Saint Gildas
+['IMG_0655.jpg', 'IMG_0656.jpg', 'IMG_0657.jpg', 'IMG_0658.jpg', 'IMG_0659.jpg', 'IMG_0660.jpg', 'IMG_0661.jpg', 'IMG_0664.jpg', 'IMG_0665.jpg', 'IMG_0666.jpg', 'IMG_0671.jpg', 'IMG_0672.jpg', 'IMG_0673.jpg', 'IMG_0674.jpg', 'IMG_0675.jpg', 'IMG_0677.jpg', 'IMG_0678.jpg', 'IMG_0680.jpg', 'IMG_0681.jpg', 'IMG_0682.jpg', 'IMG_0683.jpg', 'IMG_0686.jpg', 'IMG_0687.jpg', 'IMG_0688.jpg', 'IMG_0689.jpg', 'IMG_0690.jpg', 'IMG_0691.jpg', 'IMG_0693.jpg', 'IMG_0694.jpg', 'IMG_0695.jpg', 'IMG_0698.jpg', 'IMG_0701.jpg', 'IMG_0702.jpg', 'IMG_0703.jpg']
+Traitement terminé pour : 2011 03 TTC Chaux
+['IMG_2362.jpg', 'IMG_2363.JPG', 'IMG_2364.jpg', 'IMG_2365.jpg', 'IMG_2366.JPG', 'IMG_2368.jpg', 'P1080098.jpg', 'P1080287 (1).JPG', 'P1080287.jpg', 'P1080335.JPG', 'TTC_Stmandrier (129).jpg', 'TTC_Stmandrier (131).JPG']
+Traitement terminé pour : 2012 05 Saint Mandrier
+['chez MCL_2014 (34).jpg', 'chez MCL_2014 (36).jpg', 'chez MCL_2014 (40).jpg', 'chez MCL_2014 (42).jpg', 'chez MCL_2014 (66).jpg', 'chez MCL_2014 (68).jpg', 'chez MCL_2014 (69).jpg', 'chez MCL_2014 (79).jpg', 'DSC01216.jpg', 'DSC01217.jpg', 'DSC01219.jpg', 'DSC01221.jpg', 'DSC01222.jpg', 'DSC01223.jpg', 'DSC01224.jpg', 'DSC01225.jpg', 'DSC01226.jpg', 'DSC01227.jpg', 'DSC01228.jpg', 'DSC01229.jpg', 'DSC01230.jpg', 'DSC01231.jpg', 'DSC01232.jpg', 'DSC01233.jpg', 'DSC01234.jpg', 'DSC01236.jpg', 'DSC01237.jpg', 'DSC01238.jpg', 'DSC01239.jpg', 'DSC01240.jpg', 'DSC01241.jpg', 'DSC01243.jpg', 'DSC01244.jpg', 'DSC01245.jpg', 'DSC01246.jpg', 'DSC01247.jpg', 'Photo_2014_7 117.jpg', 'Photo_2014_7 119.jpg', 'Photo_2014_7 120.jpg', 'Photo_2014_7 121.jpg', 'Photo_2014_7 122.jpg', 'Photo_2014_7 124.jpg', 'Photo_2014_7 125.jpg', 'Photo_2014_7 126.jpg', 'Photo_2014_7 127.jpg', 'Photo_2014_7 129.jpg', 'Photo_2014_7 131.jpg', 'Photo_2014_7 132.jpg', 'Photo_2014_7 134.jpg', 'Photo_2014_7 136.jpg', 'Photo_2014_7 137.jpg', 'Photo_2014_7 139.jpg']
+Traitement terminé pour : 2014 10 TTC Rivesaltes
+['DSC03784.jpg', 'DSC03785.jpg', 'DSC03786.jpg', 'DSC03787.jpg', 'DSC03790.jpg', 'DSC03791.jpg', 'DSC03794.jpg', 'DSC03795.jpg', 'DSC03796.jpg', 'DSC03797.jpg', 'DSC03799.jpg', 'DSC03800.jpg', 'DSC03802.jpg', 'DSC03804.jpg', 'DSC03806.jpg', 'DSC03808.jpg', 'DSC03809.jpg', 'DSC03813.jpg', 'DSC03814.jpg', 'DSC03818.jpg', 'DSC03819.jpg', 'DSC03820.jpg', 'DSC03821.jpg', 'DSC03823.jpg', 'DSC03824.jpg']
+Traitement terminé pour : 2017 06 TTC St Gildas
+['1 paulilles FD (30).jpg', '3 Prunet CT (28).jpg', '4 La Trinité CT (38).jpg', '5 Serrabona CT (15).jpg', 'HY1 Leucate.jpg', 'HY51 Serrabona.jpg', 'HY52 Serrabona.jpg']
+Traitement terminé pour : 2018 03 Rivesaltes
+['20181021_103255.jpg', 'IMG_20181019_174538.jpg', 'IMG_20181019_175045.jpg', 'IMG_20181019_181128.jpg', 'IMG_20181019_181146.jpg', 'IMG_20181019_183555.jpg', 'IMG_20181019_183705.jpg', 'IMG_20181019_183739.jpg', 'IMG_20181019_183827.jpg', 'IMG_20181021_103059.jpg', 'IMG_20181021_124545.jpg', 'IMG_20181021_124630.jpg', 'IMG_20181021_130309.jpg', 'IMG_20181021_131228.jpg', 'IMG_20181021_131349.jpg', 'IMG_20181021_132956.jpg', 'IMG_20181021_133013.jpg', 'IMG_20181021_133028.jpg', 'IMG_20181021_133138.jpg', 'IMG_20181021_133730.jpg', 'IMG_20181021_134128.jpg', 'IMG_20181021_134741.jpg', 'IMG_20181021_140051.jpg', 'IMG_20181021_141607.jpg', 'IMG_20181021_142237.jpg', 'IMG_20181021_142818.jpg', 'IMG_20181021_165236.jpg', 'IMG_20181021_165410.jpg', 'IMG_20181021_190312.jpg', 'IMG_20181021_190313.jpg', 'IMG_20181021_190625.jpg', 'IMG_20181021_190655.jpg']
+Traitement terminé pour : 2018 10 TTC Soustons
+['20190322_111105_HDR.jpg', 'Hélène et Yves_Rivesaltes.jpg', 'IMG_20190322_142053.jpg', 'IMG_20190322_181026.jpg', 'IMG_20190322_183356.jpg', 'IMG_20190322_183443.jpg', 'IMG_20190322_214946.jpg', 'IMG_20190323_110054.jpg', 'IMG_20190323_134324.jpg', 'IMG_20190323_134546.jpg', 'IMG_20190323_162711.jpg', 'IMG_20190323_162903.jpg', 'IMG_20190323_163006.jpg', 'IMG_20190323_163042.jpg', 'IMG_20190323_171116.jpg', 'IMG_20190324_111746.jpg', 'IMG_20190324_114742.jpg', 'IMG_20190324_121146.jpg', 'IMG_20190324_132237.jpg', 'IMG_20190324_132425.jpg', 'J1-CT6_Hélène et Yves.jpg']
+Traitement terminé pour : 2019 03 TTC Rivesaltes
+['IMG_20191011_164431.jpg', 'IMG_20191011_164513.jpg', 'IMG_20191011_164620.jpg', 'IMG_20191012_120948.jpg', 'IMG_20191012_125752.jpg', 'IMG_20191012_125910.jpg', 'IMG_20191012_141114.jpg', 'IMG_20191012_141420.jpg', 'IMG_20191012_141953.jpg', 'IMG_20191012_150010.jpg', 'IMG_20191012_151915.jpg', 'IMG_20191012_152142.jpg', 'IMG_20191012_192718.jpg', 'IMG_20191013_083648.jpg', 'IMG_20191013_195556.jpg', 'IMG_20191013_195612.jpg', 'IMG_20191013_195646.jpg', 'IMG_20191013_195725.jpg', 'IMG_20191013_213000_1.jpg', 'IMG_20191013_213032.jpg', 'IMG_20191013_225217.jpg', 'IMG_20191027_095110.jpg', 'IMG_20191030_100930.jpg', 'IMG_20191031_125714.jpg', 'IMG_20191031_125810.jpg']
+Traitement terminé pour : 2019 10 TTC Saint Mandrier
+['IMG-20230624-WA0003.jpg', 'IMG-20230624-WA0005.jpg', 'IMG-20230624-WA0008.jpg', 'IMG-20230625-WA0010.jpg', 'IMG-20230626-WA0004.jpg', 'IMG-20230626-WA0006.jpg', 'IMG-20230626-WA0007.jpg', 'IMG-20230626-WA0010.jpg', 'IMG-20230626-WA0011.jpg', 'IMG-20230626-WA0012.jpg', 'IMG_20230622_172052_edit_22411133439287.jpg', 'IMG_20230623_201031.jpg', 'IMG_20230625_084102_edit_51388637977053.jpg', 'IMG_20230625_090305_edit_50963890722951.jpg', 'IMG_20230625_090352.jpg', 'IMG_20230625_091109_edit_50904294215668.jpg']
+Traitement terminé pour : 2023 06 Saint Gildas
+['10-20240602_CT-MCL.jpg', '11-20240602_xavier carrere.jpg', '12_20240602.jpg', '18-20240602_sans VAl.jpg', '2-20250531_H&Y.jpg', '5-20240601_lud_val_pat-table.jpg', '9-20240602_HS_PT.jpg', 'IMG_20240602_185801.jpg', 'ttc-soustonsmai24-a 6.jpg', 'TTC2024-mai-soustons-tous.jpg']
+Traitement terminé pour : 2024 05 Soustons
+['20250614_174554.jpg', '20250615_201903.jpg', '20250615_202021.jpg', '20250615_202023.jpg', 'IMG-20250613-WA0002.jpg', 'IMG-20250613-WA0004.jpg', 'IMG-20250613-WA0006.jpg', 'IMG-20250613-WA0018.jpg']
+Traitement terminé pour : 2025 06 Saint Mandrier

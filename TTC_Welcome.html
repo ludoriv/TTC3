@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Bienvenue</title>
+</head>
+<!--body text="#000000" bgcolor="#FFCC99" link="#0000CC" vlink="#000080" alink="#0000CC"-->
+<!--body text="#000000" bgcolor="#BBBBBB" link="#0000CC" vlink="#000080" alink="#0000CC"-->
+<style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+</style>
+
+<a name = "debut" />
+<center><table width="60%"><tr>
+<td valign="top" align="left" width="40%">
+<center><h1><font size="5", color = "#006600"> Bienvenue sur le site de TTC </h1>
+</font>
+<br /-->
+</center>
+<p><font size="5", color = "brown"> 
+<!--img src="images/U_CONSTR.GIF" alt= "Travaux"/--> 
+<I>En introduction, petit carrousel des photos de groupe (8 personnes ou presque)... </I>
+</font--></p>
+<p>
+  <img id="diaporama" src="Photos_base/image1.jpg" alt="Image du diaporama">
+
+  <script>
+    // Liste des images (chemins relatifs ou URLs)
+    const images = [
+      "Photos_base/image1.jpg",
+      "Photos_base/image2.jpg",
+      "Photos_base/image3.jpg",
+      "Photos_base/image4.jpg",
+      "Photos_base/image5.jpg",
+      "Photos_base/image6.jpg",
+      "Photos_base/image7.jpg",
+      "Photos_base/image8.jpg",
+      "Photos_base/image9.jpg",
+      "Photos_base/image10.jpg",
+      "Photos_base/image11.jpg",
+      "Photos_base/image12.jpg",
+      "Photos_base/image13.jpg",
+      "Photos_base/image14.jpg",
+      "Photos_base/image15.jpg",
+      "Photos_base/image16.jpg",
+      "Photos_base/image17.jpg"];
+    let index = 0;
+    const imgElement = document.getElementById("diaporama");
+
+    function afficherImage() {
+      imgElement.src = images[index];
+      index = (index + 1) % images.length; // boucle
+    }
+
+    // Affiche la première image immédiatement
+    afficherImage();
+
+    // Change d'image toutes les 2 secondes (2000 ms)
+    setInterval(afficherImage, 2000);
+  </script>
+
+</p>
+</center>
+       
+
+</body>
+</html>

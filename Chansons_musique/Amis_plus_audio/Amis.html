@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Amis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        img {
+            max-width: 60%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>A huit...</h1>
+
+    <!-- Image -->
+    <img src="A_Huit2.jpg" alt="Image agréable">
+
+    <!-- Audio -->
+    <audio id="musique" src="Ami2.mp3"></audio>
+
+    <!-- Bouton lecture/pause -->
+    <br>
+    <button id="boutonMusique">🎵 Lancer la musique</button>
+
+    <script>
+        const audio = document.getElementById("musique");
+        const bouton = document.getElementById("boutonMusique");
+
+        bouton.addEventListener("click", () => {
+            if (audio.paused) {
+                audio.play();
+                bouton.textContent = "⏸️ Mettre en pause";
+            } else {
+                audio.pause();
+                bouton.textContent = "🎵 Lancer la musique";
+            }
+        });
+    </script>
+
+</body>
+</html>
+<!--🔁 Fonctionnement :
+Le bouton commence par "Lancer la musique".
+
+Quand tu cliques dessus :
+
+La musique se lance.
+
+Le bouton devient "⏸️ Mettre en pause".
+
+Tu peux cliquer à nouveau pour mettre la musique en pause et inverser le texte.
+---------------------------------------------------------------
+Non merci. Tout OK !
+
+ChatGPT a dit :
+Avec plaisir 😊 ! Ravi que tout soit en ordre.
+
+Si tu veux plus tard :
+
+intégrer une playlist,
+
+ajouter des effets visuels synchronisés à la musique,
+
+rendre le site responsive pour mobile,
+
+je suis là pour t'aider.
+
+Bonne création de page web, et bonne musique 🎶 ! -->
+
+
+
+

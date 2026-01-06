@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Antichambre</title>
+</head>
+<body>
+<center><p><font size="5", color = "#006600">Site TTC: Veuillez entrer le mot de passe :<!--/font-->
+</p><!--font size="5"-->
+  <!--input type="password" id="Pim" placeholder="Entrez le mot de passe"-->
+  <input type="password" id="Pim" placeholder="">
+  <button onclick="validerPim()">Vérifier</button>
+  <p id="resultat"></font></p>
+</center>
+  <script>
+    const Pim_hash =  "c18f662b7cdc56018aa335668ee92a1ce99f5437af3df7862e58ea66d3fb1003" 
+//    Pimrez = 
+    async function genererHash(Pim) {
+      const encoder = new TextEncoder();
+      const data = encoder.encode(Pim);
+      const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    async function validerPim() {
+      const Pim = document.getElementById("Pim").value;
+      const hash = await genererHash(Pim);
+
+      const resultat = document.getElementById("resultat");
+      if (hash === Pim_hash) {
+        resultat.textContent = "✅ Mot de passe correct.";
+        resultat.style.color = "green";
+        window.open('TTC1.html', '_blank');
+
+      } else {
+        resultat.textContent = "❌ Mot de passe incorrect.";
+        resultat.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>

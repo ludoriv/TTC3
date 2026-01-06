@@ -1,0 +1,9 @@
+[
+"chansons/Butte_parolesTTC_2023.pdf",
+"chansons/FD_70_ans.pdf",
+"chansons/Hélène_79 ans_St Mandrier.pdf",
+"chansons/Les 70 ans de Françoise à St Mandrier.pdf",
+"chansons/Palpitations.pdf",
+"chansons/paroles_Soustons2024.pdf",
+"chansons/Soustons2024(FD).pdf"
+]

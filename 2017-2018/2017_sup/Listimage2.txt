@@ -1,0 +1,51 @@
+const photos = [
+"1-les angles (6).jpg",
+"3-Prieuré de Serrabona (21).jpg",
+"70ans_Christine_St mandrier (106).jpg",
+"70ans_Christine_St mandrier (116).jpg",
+"70ans_Christine_St mandrier (128).jpg",
+"70ans_Christine_St mandrier (130).jpg",
+"70ans_Christine_St mandrier (14).jpg",
+"70ans_Christine_St mandrier (25).jpg",
+"70ans_Christine_St mandrier (63).jpg",
+"70ans_Christine_St mandrier (65).jpg",
+"70ans_Christine_St mandrier (78).jpg",
+"70ans_Christine_St mandrier (92).jpg",
+"70ans_Christine_St mandrier-mcl.jpg",
+"70ans_stmandrier (3).jpg",
+"70ans_stmandrier (32).jpg",
+"70ans_stmandrier (37).jpg",
+"70ans_stmandrier (62).jpg",
+"70ans_stmandrier_40aine.jpg",
+"les angles_janvier17 (2).jpg",
+"les angles_janvier17 (3).jpg",
+"les angles_janvier17 (4).jpg",
+"les embiez (1).jpg",
+"ludovic.jpg",
+"marie-claude.jpg",
+"marie-claude5.jpg",
+"mcl-ludovic-hélène.jpg",
+"soustons_anniversaire d"H_l_ne.jpg",
+"soustons_hélène et mcl.jpg",
+"soustons_ludovic.jpg",
+"soustons_mcl et ludovic-001.jpg",
+"soustons_mcl7.jpg",
+"soustons_mclaude6.jpg",
+"soustons_ttc (26).jpg",
+"soustons_ttc (64).jpg",
+"soustons_ttc (7).jpg",
+"soustons_ttc (72).jpg",
+"soustons_ttc_les hommes.jpg"
+]
+
+let current = 0;
+const img = document.getElementById("photo");
+document.getElementById("next").addEventListener("click", () => {
+  current = (current + 1) % photos.length;
+  img.src = photos[current];
+});
+
+document.getElementById("prev").addEventListener("click", () => {
+  current = (current - 1 + photos.length) % photos.length;
+  img.src = photos[current];
+});
