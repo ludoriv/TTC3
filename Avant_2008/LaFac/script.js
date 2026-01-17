@@ -1,5 +1,6 @@
 const photos = 
-['2022_Ceret/IMG_20220402_132109.jpg', '2022_Ceret/TTC_ceret_2022_tous.jpg', '2022_Ceret/TTC_ceret_2022_tous2.jpg', '2022_Ceret/TTC_ceret_val.jpg'];
+['Photos/HS_discours.jpg', 'Photos/HS_equipe_TTC.jpg', 'Photos/HS_poster.jpg', 'Photos/HS_poster_mcl.jpg', 'Photos/HS_tobin_cadeau.jpg', 'Photos/HS_tobin_livredor.jpg']
+
 let current = 0;
 const img = document.getElementById("photo");
 document.getElementById("next").addEventListener("click", () => {

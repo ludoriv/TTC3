@@ -1,4 +1,4 @@
-/*🧱 Nouvelle structure de ton projet :
+/*🧱 Nouvelle structure du projet :
 pgsql
 Copier
 Modifier
@@ -37,8 +37,8 @@ h1 {
 /* Liens */
 a {
     display: inline-block;
-    margin: 20px 0;
-    padding: 12px 24px;
+    margin: 10px 0;
+    padding: 2px 24px;
     background-color: #007BFF;
     color: white;
     text-decoration: none;
